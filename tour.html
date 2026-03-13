@@ -1,0 +1,330 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Virtual Tour</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+<meta charset="utf-8"/>
+
+<style>
+html,body{
+  height:100%;
+  margin:0;
+  overflow:hidden;
+  font-family:Arial, Helvetica, sans-serif;
+  background:#000;
+}
+
+/* NAVBAR */
+#navbar{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  background:#1b120d;
+
+  z-index:9999;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:10px 15px;
+  box-sizing:border-box;
+}
+
+#logo img{
+  height:60px;
+}
+
+/* MENU */
+#menu{
+  display:flex;
+  gap:20px;
+}
+
+.dropdown{
+  position:relative;
+}
+
+/* Main dropdown button with arrow */
+.dropdown > button{
+  background:none;
+  border:none;
+  color:#fff;
+  font-size:15px;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  width:100%;
+}
+
+/* Arrow icon only for main button */
+/* Main dropdown button arrow as image */
+.dropdown > button::after {
+  content: "";
+  display: inline-block;
+  width: 16px;        /* arrow image width adjust */
+  height: 16px;       /* arrow image height adjust */
+  margin-left: 10px;
+  background-image: url('https://cdn.prod.website-files.com/646b26f8d9c8a8dbd4131e11/69b3925a35c4b0a728f55910_down-arrow.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease;
+}
+
+/* Rotate arrow image when open */
+.dropdown.open > button::after {
+  transform: rotate(-180deg);
+}
+
+/* dropdown content buttons (no arrow) */
+.dropdown-content button::after {
+  content: none;
+}
+
+.dropdown-content{
+  display:none;
+  position:absolute;
+  min-width:220px;
+  margin-top: 10px;
+  margin-left: 10px;
+  background:#111;
+  top:30px;
+  left:0;
+  flex-direction:column;
+  z-index:1000;
+}
+
+.dropdown-content button{
+  background:#111;
+  color:#fff;
+  border:none;
+  padding:8px 0px;
+  padding-left: 10px;
+  text-align:left;
+  cursor:pointer;
+  border-bottom:1px solid #333;
+}
+
+.dropdown-content button:hover{
+  background:#333;
+}
+
+/* HAMBURGER */
+#hamburger{
+  display:none;
+  font-size:18px;
+  line-height: 28px;
+  color:#fff;
+  cursor:pointer;
+}
+
+/* MOBILE MENU */
+@media (max-width:768px){
+  #menu{
+    display:flex;
+    flex-direction:column;
+    position:fixed;
+    top:0;
+    right:-300px; /* hidden off-screen */
+    width:250px;
+    height:100%;
+    background:#111;
+    padding-top:80px;
+    padding-left: 10px;
+    padding-right: 10px;
+    gap:10px;
+    transition:right 0.3s ease;
+    z-index:10000;
+    overflow-y:auto;
+  }
+
+  #menu .close-btn{
+    position:absolute;
+    top:10px;
+    right:10px;
+    font-size:28px;
+    color:#fff;
+    cursor:pointer;
+  }
+
+  .dropdown-content{
+    position:relative;
+    top:0;
+    background:#222;
+  }
+
+  #hamburger{
+    display:block;
+  }
+}
+
+/* TOUR */
+#tour{
+  width:100%;
+  height:100%;
+}
+</style>
+
+<script src="tour.js"></script>
+</head>
+
+<body>
+
+<div id="navbar" class="nav">
+  <div id="logo">
+    <img src="https://cdn.prod.website-files.com/646b26f8d9c8a8dbd4131e11/697886dfd55de78aa1cfeadd_Mask%20group.svg" alt="" />
+  </div>
+  <div id="hamburger" onclick="toggleMenu()">☰</div>
+
+  <div id="menu">
+    <div class="close-btn" onclick="closeMenu()">×</div>
+
+    <!-- COMMON FACILITIES -->
+    <div class="dropdown">
+      <button>Common Facilities</button>
+      <div class="dropdown-content">
+        <button onclick="goScene('scene_0_lift_lobby')">Lift Lobby</button>
+        <button onclick="goScene('scene_1_main_entrance')">Main Entrance</button>
+        <button onclick="goScene('scene_2_main_walkway')">Main Walkway</button>
+        <button onclick="goScene('scene_3_reception_helpdesk')">Reception</button>
+        <button onclick="goScene('scene_4_u_lounge')">U Lounge</button>
+        <button onclick="goScene('scene_5_u_garden')">U Garden</button>
+        <button onclick="goScene('scene_6_u_lounge_discussion_room')">Discussion Room</button>
+        <button onclick="goScene('scene_7_common_kitchen')">Common Kitchen</button>
+        <button onclick="goScene('scene_8_outdoor_dining_area')">Outdoor Dining</button>
+        <button onclick="goScene('scene_9_gym')">Gym</button>
+        <button onclick="goScene('scene_10_swimming_pool')">Swimming Pool</button>
+        <button onclick="goScene('scene_11_self_service_launderette')">Launderette</button>
+      </div>
+    </div>
+
+    <!-- EN SUITES -->
+    <div class="dropdown">
+      <button>En-suites</button>
+      <div class="dropdown-content">
+        <button onclick="goScene('scene_12_en_suites_corridor')">Corridor</button>
+        <button onclick="goScene('scene_13_en_suites_single')">Single</button>
+        <button onclick="goScene('scene_14_en_suites_twin')">Twin</button>
+        <button onclick="goScene('scene_15_en_suites_premium_single')">Premium Single</button>
+      </div>
+    </div>
+
+    <!-- APARTMENT -->
+    <div class="dropdown">
+      <button>Apartment</button>
+      <div class="dropdown-content">
+        <button onclick="goScene('scene_16_apartment_corridor')">Corridor</button>
+        <button onclick="goScene('scene_17_apartment_washroom')">Washroom</button>
+        <button onclick="goScene('scene_18_apartment_kitchenette')">Kitchenette</button>
+        <button onclick="goScene('scene_19_apartment_standard_single')">Standard Single</button>
+        <button onclick="goScene('scene_20_apartment_standard_twin')">Standard Twin</button>
+        <button onclick="goScene('scene_21_superiorsingle')">Superior Single</button>
+        <button onclick="goScene('scene_22_ruemz_kitchen')">Ruemz Kitchen</button>
+      </div>
+    </div>
+
+    <!-- RUEMZ -->
+    <div class="dropdown">
+      <button>Ruemz</button>
+      <div class="dropdown-content">
+        <button onclick="goScene('scene_23_ruemz_lounge')">Ruemz Lounge</button>
+        <button onclick="goScene('scene_24_common_corridor')">Common Corridor</button>
+        <button onclick="goScene('scene_25_lift_lobby')">Lift Lobby</button>
+        <button onclick="goScene('scene_26_ruemz_en_suites_single')">En-suite Single</button>
+        <button onclick="goScene('scene_27_superior_en_suites_single')">Superior En-suite</button>
+        <button onclick="goScene('scene_28_en_suites_twin')">Twin</button>
+        <button onclick="goScene('scene_29_delux_en_suites_twin')">Deluxe Twin</button>
+        <button onclick="goScene('scene_30_delux_en_suites_twin_2')">Deluxe Twin 2</button>
+        <button onclick="goScene('scene_31_entrance')">Entrance</button>
+      </div>
+    </div>
+
+    <!-- OFF CAMPUS -->
+    <div class="dropdown">
+      <button>Off-campus</button>
+      <div class="dropdown-content">
+        <button onclick="goScene('scene_32_apartment_common')">Apartment Common</button>
+        <button onclick="goScene('scene_33_single_room')">Single Room</button>
+        <button onclick="goScene('scene_34_twin_room')">Twin Room</button>
+        <button onclick="goScene('scene_35_student_lounge')">Student Lounge</button>
+        <button onclick="goScene('scene_36_common_kitchen')">Common Kitchen</button>
+        <button onclick="goScene('scene_37_gym')">Gym</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="tour"></div>
+
+<script>
+embedpano({
+  xml:"tour.xml",
+  target:"tour",
+  id:"krpanoSWFObject",
+  html5:"only",
+  passQueryParameters:true
+});
+
+function goScene(scene){
+  var krpano=document.getElementById("krpanoSWFObject");
+  if(krpano && krpano.call){
+    krpano.call("loadscene("+scene+", null, MERGE, BLEND(1));");
+  }
+  if(window.innerWidth<768){
+    closeMenu();
+  }
+}
+
+function toggleMenu(){
+  var menu=document.getElementById("menu");
+  if(menu.style.right==="0px"){
+    menu.style.right="-300px";
+  }else{
+    menu.style.right="0px";
+  }
+}
+
+function closeMenu(){
+  document.getElementById("menu").style.right="-300px";
+}
+
+// DROPDOWN ON CLICK WITH ARROW ROTATION
+var dropdowns = document.querySelectorAll('.dropdown');
+dropdowns.forEach(function(dropdown){
+  var button = dropdown.querySelector('button');
+  var content = dropdown.querySelector('.dropdown-content');
+
+  button.addEventListener('click', function(e){
+    e.stopPropagation();
+
+    dropdowns.forEach(function(other){
+      if(other !== dropdown){
+        other.querySelector('.dropdown-content').style.display = 'none';
+        other.classList.remove('open');
+      }
+    });
+
+    if(content.style.display === 'flex'){
+      content.style.display = 'none';
+      dropdown.classList.remove('open');
+    }else{
+      content.style.display = 'flex';
+      content.style.flexDirection = 'column';
+      dropdown.classList.add('open');
+    }
+  });
+});
+
+// Close dropdowns if click outside
+window.addEventListener('click', function(){
+  dropdowns.forEach(function(dropdown){
+    dropdown.querySelector('.dropdown-content').style.display = 'none';
+    dropdown.classList.remove('open');
+  });
+});
+</script>
+
+</body>
+</html>
