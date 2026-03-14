@@ -121,6 +121,23 @@ html,body{
   cursor:pointer;
 }
 
+/* DESKTOP DROPDOWN FIX */
+@media (min-width:769px){
+
+  /* last dropdown open from right so it doesn't cut */
+  #menu .dropdown:last-child .dropdown-content{
+    left:auto;
+    right:0;
+  }
+
+  /* second last dropdown little shift */
+  #menu .dropdown:nth-last-child(2) .dropdown-content{
+    left:auto;
+    right:0;
+  }
+
+}
+
 /* MOBILE MENU */
 @media (max-width:768px){
   #menu{
