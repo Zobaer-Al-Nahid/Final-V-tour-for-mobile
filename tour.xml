@@ -17,7 +17,7 @@
 	               autotour="true"
 	               littleplanetintro="false"
 	               followmousecontrol="false"
-	               title="false"
+	               title="true"
 	               thumbs="false"
 	               thumbs_width="120" thumbs_height="80" thumbs_padding="10" thumbs_crop="0|40|240|160"
 	               thumbs_opened="false"
@@ -71,7 +71,7 @@
 	
 
 	
-	<scene name="scene_0_lift_lobby" title="0_Lift Lobby" onstart="" thumburl="panos/0_Lift_Lobby.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	<scene name="scene_0_lift_lobby" title="Lift Lobby" onstart="" thumburl="panos/0_Lift_Lobby.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -85,7 +85,7 @@
 
 	</scene>
 
-	<scene name="scene_1_main_entrance" title="1_Main Entrance" onstart="" thumburl="panos/1_Main_Entrance.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	<scene name="scene_1_main_entrance" title="Main Entrance" onstart="" thumburl="panos/1_Main_Entrance.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -99,7 +99,7 @@
 
 	</scene>
 
-	<scene name="scene_2_main_walkway" title="2_Main Walkway" onstart="" thumburl="panos/2_Main_Walkway.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	<scene name="scene_2_main_walkway" title="Main Walkway" onstart="" thumburl="panos/2_Main_Walkway.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -113,7 +113,7 @@
 
 	</scene>
 
-	<scene name="scene_3_reception_helpdesk" title="3_Reception Helpdesk" onstart="" thumburl="panos/3_Reception_Helpdesk.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	<scene name="scene_3_reception_helpdesk" title="Reception Helpdesk" onstart="" thumburl="panos/3_Reception_Helpdesk.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -127,7 +127,7 @@
 
 	</scene>
 
-	<scene name="scene_4_u_lounge" title="4_U Lounge" onstart="" thumburl="panos/4_U_Lounge.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	<scene name="scene_4_u_lounge" title="U Lounge" onstart="" thumburl="panos/4_U_Lounge.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -141,7 +141,7 @@
 
 	</scene>
 
-	<scene name="scene_5_u_garden" title="5_U Garden" onstart="" thumburl="panos/5_U_Garden.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	<scene name="scene_5_u_garden" title="U Garden" onstart="" thumburl="panos/5_U_Garden.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -155,7 +155,7 @@
 
 	</scene>
 
-	<scene name="scene_6_u_lounge_discussion_room" title="6_U Lounge Discussion Room" onstart="" thumburl="panos/6_U_Lounge_Discussion_Room.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	<scene name="scene_6_u_lounge_discussion_room" title="U Lounge Discussion Room" onstart="" thumburl="panos/6_U_Lounge_Discussion_Room.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -169,7 +169,7 @@
 
 	</scene>
 
-	<scene name="scene_7_common_kitchen" title="7_Common Kitchen" onstart="" thumburl="panos/7_Common_Kitchen.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	<scene name="scene_7_common_kitchen" title="Common Kitchen" onstart="" thumburl="panos/7_Common_Kitchen.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -183,7 +183,7 @@
 
 	</scene>
 
-	<scene name="scene_8_outdoor_dining_area" title="8_Outdoor Dining Area" onstart="" thumburl="panos/8_Outdoor_Dining_Area.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	<scene name="scene_8_outdoor_dining_area" title="Outdoor Dining Area" onstart="" thumburl="panos/8_Outdoor_Dining_Area.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -197,7 +197,7 @@
 
 	</scene>
 
-	<scene name="scene_9_gym" title="9_Gym" onstart="" thumburl="panos/9_Gym.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	<scene name="scene_9_gym" title="Gym" onstart="" thumburl="panos/9_Gym.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -211,7 +211,7 @@
 
 	</scene>
 
-	<scene name="scene_10_swimming_pool" title="10_Swimming Pool" onstart="" thumburl="panos/10_Swimming_Pool.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	<scene name="scene_10_swimming_pool" title="Swimming Pool" onstart="" thumburl="panos/10_Swimming_Pool.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -225,7 +225,7 @@
 
 	</scene>
 
-	<scene name="scene_11_self_service_launderette" title="11_Self-service Launderette" onstart="" thumburl="panos/11_Self_service_Launderette.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	<scene name="scene_11_self_service_launderette" title="Self-service Launderette" onstart="" thumburl="panos/11_Self_service_Launderette.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -239,7 +239,7 @@
 
 	</scene>
 
-	<scene name="scene_12_en_suites_corridor" title="12_En-Suites Corridor" onstart="" thumburl="panos/12_En_Suites_Corridor.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	<scene name="scene_12_en_suites_corridor" title="En-Suites Corridor" onstart="" thumburl="panos/12_En_Suites_Corridor.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -253,7 +253,7 @@
 
 	</scene>
 
-	<scene name="scene_13_en_suites_single" title="13_En-Suites Single" onstart="" thumburl="panos/13_En_Suites_Single.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	<scene name="scene_13_en_suites_single" title="En-Suites Single" onstart="" thumburl="panos/13_En_Suites_Single.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -267,7 +267,7 @@
 
 	</scene>
 
-	<scene name="scene_14_en_suites_twin" title="14_En-Suites Twin" onstart="" thumburl="panos/14_En_Suites_Twin.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	<scene name="scene_14_en_suites_twin" title="En-Suites Twin" onstart="" thumburl="panos/14_En_Suites_Twin.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -281,7 +281,7 @@
 
 	</scene>
 
-	<scene name="scene_15_en_suites_premium_single" title="15_En-Suites Premium Single" onstart="" thumburl="panos/15_En_Suites_Premium_Single.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	<scene name="scene_15_en_suites_premium_single" title="En-Suites Premium Single" onstart="" thumburl="panos/15_En_Suites_Premium_Single.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -295,7 +295,7 @@
 
 	</scene>
 
-	<scene name="scene_16_apartment_corridor" title="16_Apartment Corridor" onstart="" thumburl="panos/16_Apartment_Corridor.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	<scene name="scene_16_apartment_corridor" title="Apartment Corridor" onstart="" thumburl="panos/16_Apartment_Corridor.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -309,7 +309,7 @@
 
 	</scene>
 
-	<scene name="scene_17_apartment_washroom" title="17_Apartment Washroom" onstart="" thumburl="panos/17_Apartment_Washroom.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	<scene name="scene_17_apartment_washroom" title="Apartment Washroom" onstart="" thumburl="panos/17_Apartment_Washroom.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -323,7 +323,7 @@
 
 	</scene>
 
-	<scene name="scene_18_apartment_kitchenette" title="18_Apartment Kitchenette" onstart="" thumburl="panos/18_Apartment_Kitchenette.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	<scene name="scene_18_apartment_kitchenette" title="Apartment Kitchenette" onstart="" thumburl="panos/18_Apartment_Kitchenette.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -337,7 +337,7 @@
 
 	</scene>
 
-	<scene name="scene_19_apartment_standard_single" title="19_Apartment_Standard Single" onstart="" thumburl="panos/19_Apartment_Standard_Single.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	<scene name="scene_19_apartment_standard_single" title="Apartment_Standard Single" onstart="" thumburl="panos/19_Apartment_Standard_Single.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -351,7 +351,7 @@
 
 	</scene>
 
-	<scene name="scene_20_apartment_standard_twin" title="20_Apartment_Standard Twin" onstart="" thumburl="panos/20_Apartment_Standard_Twin.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	<scene name="scene_20_apartment_standard_twin" title="Apartment_Standard Twin" onstart="" thumburl="panos/20_Apartment_Standard_Twin.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -365,7 +365,7 @@
 
 	</scene>
 
-	<scene name="scene_21_superiorsingle" title="21_SuperiorSingle" onstart="" thumburl="panos/21_SuperiorSingle.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	<scene name="scene_21_superiorsingle" title="SuperiorSingle" onstart="" thumburl="panos/21_SuperiorSingle.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -379,7 +379,7 @@
 
 	</scene>
 
-	<scene name="scene_22_ruemz_kitchen" title="22_Ruemz Kitchen" onstart="" thumburl="panos/22_Ruemz_Kitchen.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	<scene name="scene_22_ruemz_kitchen" title="Ruemz Kitchen" onstart="" thumburl="panos/22_Ruemz_Kitchen.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -393,7 +393,7 @@
 
 	</scene>
 
-	<scene name="scene_23_ruemz_lounge" title="23_Ruemz Lounge" onstart="" thumburl="panos/23_Ruemz_Lounge.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	<scene name="scene_23_ruemz_lounge" title="Ruemz Lounge" onstart="" thumburl="panos/23_Ruemz_Lounge.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -407,7 +407,7 @@
 
 	</scene>
 
-	<scene name="scene_24_common_corridor" title="24_Common Corridor" onstart="" thumburl="panos/24_Common_Corridor.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	<scene name="scene_24_common_corridor" title="Common Corridor" onstart="" thumburl="panos/24_Common_Corridor.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -421,7 +421,7 @@
 
 	</scene>
 
-	<scene name="scene_25_lift_lobby" title="25_Lift Lobby" onstart="" thumburl="panos/25_Lift_Lobby.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	<scene name="scene_25_lift_lobby" title="Lift Lobby" onstart="" thumburl="panos/25_Lift_Lobby.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -435,7 +435,7 @@
 
 	</scene>
 
-	<scene name="scene_26_ruemz_en_suites_single" title="26_Ruemz En-suites Single" onstart="" thumburl="panos/26_Ruemz_En_suites_Single.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	<scene name="scene_26_ruemz_en_suites_single" title="Ruemz En-suites Single" onstart="" thumburl="panos/26_Ruemz_En_suites_Single.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -449,7 +449,7 @@
 
 	</scene>
 
-	<scene name="scene_27_superior_en_suites_single" title="27_Superior En-Suites Single" onstart="" thumburl="panos/27_Superior_En_Suites_Single.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	<scene name="scene_27_superior_en_suites_single" title="Superior En-Suites Single" onstart="" thumburl="panos/27_Superior_En_Suites_Single.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -463,7 +463,7 @@
 
 	</scene>
 
-	<scene name="scene_28_en_suites_twin" title="28_En-Suites Twin" onstart="" thumburl="panos/28_En_Suites_Twin.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	<scene name="scene_28_en_suites_twin" title="En-Suites Twin" onstart="" thumburl="panos/28_En_Suites_Twin.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -477,7 +477,7 @@
 
 	</scene>
 
-	<scene name="scene_29_delux_en_suites_twin" title="29_Delux En-suites Twin" onstart="" thumburl="panos/29_Delux_En_suites_Twin.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	<scene name="scene_29_delux_en_suites_twin" title="Delux En-suites Twin" onstart="" thumburl="panos/29_Delux_En_suites_Twin.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -491,7 +491,7 @@
 
 	</scene>
 
-	<scene name="scene_30_delux_en_suites_twin_2" title="30_Delux En-suites Twin 2" onstart="" thumburl="panos/30_Delux_En_suites_Twin_2.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	<scene name="scene_30_delux_en_suites_twin_2" title="Delux En-suites Twin 2" onstart="" thumburl="panos/30_Delux_En_suites_Twin_2.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -505,7 +505,7 @@
 
 	</scene>
 
-	<scene name="scene_31_entrance" title="31_Entrance" onstart="" thumburl="panos/31_Entrance.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	<scene name="scene_31_entrance" title="Entrance" onstart="" thumburl="panos/31_Entrance.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -519,7 +519,7 @@
 
 	</scene>
 
-	<scene name="scene_32_apartment_common" title="32_Apartment Common" onstart="" thumburl="panos/32_Apartment_Common.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	<scene name="scene_32_apartment_common" title="Apartment Common" onstart="" thumburl="panos/32_Apartment_Common.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -533,7 +533,7 @@
 
 	</scene>
 
-	<scene name="scene_33_single_room" title="33_Single Room" onstart="" thumburl="panos/33_Single_Room.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	<scene name="scene_33_single_room" title="Single Room" onstart="" thumburl="panos/33_Single_Room.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -547,7 +547,7 @@
 
 	</scene>
 
-	<scene name="scene_34_twin_room" title="34_Twin Room" onstart="" thumburl="panos/34_Twin_Room.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	<scene name="scene_34_twin_room" title="Twin Room" onstart="" thumburl="panos/34_Twin_Room.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -561,7 +561,7 @@
 
 	</scene>
 
-	<scene name="scene_35_student_lounge" title="35_Student Lounge" onstart="" thumburl="panos/35_Student_Lounge.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	<scene name="scene_35_student_lounge" title="Student Lounge" onstart="" thumburl="panos/35_Student_Lounge.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -575,7 +575,7 @@
 
 	</scene>
 
-	<scene name="scene_36_common_kitchen" title="36_Common Kitchen" onstart="" thumburl="panos/36_Common_Kitchen.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	<scene name="scene_36_common_kitchen" title="Common Kitchen" onstart="" thumburl="panos/36_Common_Kitchen.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -589,7 +589,7 @@
 
 	</scene>
 
-	<scene name="scene_37_gym" title="37_Gym" onstart="" thumburl="panos/37_Gym.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	<scene name="scene_37_gym" title="Gym" onstart="" thumburl="panos/37_Gym.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
